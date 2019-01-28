@@ -30,12 +30,8 @@ public class Fibonacci {
 		@return the nth fibonacci number
 	*/
 	public int fibonacci_iterative(int n) {
-		if (n == 0) {
-			return 0;
-		}
-
-		if (n == 1) {
-			return 1;
+		if (n == 0 || n == 1) {
+			return n;
 		}
 
 		int num1 = 0;
